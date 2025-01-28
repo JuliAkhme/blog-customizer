@@ -73,7 +73,7 @@ export const ArticleParamsForm = (props: ArticleParamsFormProps) => {
 			<ArrowButton isOpen={isOpen} onClick={toggleSidebar} />
 			<aside className={clsx(styles.container, isOpen ? styles.container_open : styles.container)} ref={ref}>
 				<form className={styles.form} onSubmit={handleSubmit} onReset={handleReset}>
-					<Text  size={31} weight={800} uppercase align='center'>
+					<Text as={'h2'} size={31} weight={800} uppercase align='center'>
 						Задайте параметры
 					</Text>
 					<Select selected={formState.fontFamilyOption} options={fontFamilyOptions} onChange={handleChange('fontFamilyOption')} title='Шрифт' />
