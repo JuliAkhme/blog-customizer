@@ -34,7 +34,7 @@ export const ArticleParamsForm = (props: ArticleParamsFormProps) => {
 	const ref = useRef<HTMLDivElement | null>(null);
     
     const handleOutsideClickClose = (newValue: boolean) => {
-        if (!newValue) {
+        if (!newValue && isOpen) {
             toggleSidebar();
         }
     };
